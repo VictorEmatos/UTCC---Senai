@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap'); /*Importando uma fonte.*/
+
+/* Corpo do Programa*/
+body{
+    margin: 0; /*É o espaçamento da parte de fora do elemento ///// No corpo não vai existir margem pois está em 0.*/
+    font-family: Noto Sans,sans-serif; /*Está usando o Noto sans, mas também está o usando outra fonte*/
+}
+
+/* Está dentro da tag nav e a ul é uma tag de lista não ordenada*/
+ul{
+    display: flex;
+}
+/* Está dentro da ul e ela serve para listar, ou seja, colocar em tópicos*/
+li{
+    margin: 10px;
+    list-style: none;/*Está deixando sem decoração na lista*/
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.btn-login > a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;/*Está deixando sem decoração no texto*/
+    color: white;/*Está colorindo a letra*/
+}
+.menu-header{
+    display: flex; /*defina a maneira como determinado elemento HTML deve ser renderizado, o flex serve para organizar o header, A flexpropriedade é uma propriedade abreviada*/
+    justify-content: flex-end;/*A justify-contentpropriedade alinha os itens do container flexível quando os itens não utilizam todo o espaço disponível no eixo principal (horizontal).*/
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.home-pointer{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;/*Está deixando sem decoração no texto*/
+    color: black;/*Está colorindo a letra*/
+}
+
+.home-pointer:hover{
+    color: #2BD2FF;/*Está colorindo a letra*/
+}
+
+.home-pointer{
+    cursor: pointer;
+}
+
+.box-termo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 0px;
+}
+
+.logo-menu{
+    margin-right: auto;
+}
+
+.btn-log{
+    padding: 0px 20px;
+}
+
+.btn-login{
+    width: 100%;
+    background: #0093E9;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    width: 70px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #0093E9;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-login:hover{
+    background: #2BD2FF;
+    box-shadow: 0px 10px 40px -12px #2BD2FF;
+}

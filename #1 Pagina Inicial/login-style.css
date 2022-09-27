@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap'); /*Importando uma fonte.*/
+
+/* Corpo do Programa*/
+body{
+    margin: 0; /*É o espaçamento da parte de fora do elemento ///// No corpo não vai existir margem pois está em 0.*/
+    font-family: Noto Sans,sans-serif; /*Está usando o Noto sans, mas também está o usando outra fonte*/
+}
+
+a{
+    text-decoration: none;
+    color: #adadad;
+
+}
+
+.btn-entrar > a{
+    color: white;
+}
+
+/* Criei uma class para a parte do header*/
+.menu-header{
+    display: flex; /*defina a maneira como determinado elemento HTML deve ser renderizado, o flex serve para organizar o header, A flexpropriedade é uma propriedade abreviada*/
+    justify-content: flex-end;/*A justify-contentpropriedade alinha os itens do container flexível quando os itens não utilizam todo o espaço disponível no eixo principal (horizontal).*/
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.logo-menu{
+    margin-right: auto;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 370px;
+    background: white;
+    border-radius: 13px;
+    box-shadow: 0px 10px 40px -26px black;
+}
+
+.center > h2{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .text-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.text-field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.text-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY( -50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.text-field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #0093E9;
+    transition: .5s;
+}
+
+.text-field input:focus ~ label,
+.text-field input:valid ~ label{
+    top: -5px;
+    color: #0093E9;
+}
+
+.text-field input:focus ~ span::before,
+.text-field input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #adadad;
+    transition: all 0.3s ease 0;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+.fa-eye{
+    position: absolute;
+    right: 15px;
+    transform: translate(0, 50%);
+    top: 15%;
+    color: #adadad;
+    cursor: pointer;
+}
+
+.btn-entrar{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    background: #0093E9;
+    box-shadow: 0px 10px 40px -12px #0093E9;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-entrar:hover{
+    background: #2BD2FF;
+    box-shadow: 0px 10px 40px -12px #2BD2FF;
+}
+
+.create-cont{
+    color: #0093E9;
+    transition: all 0.3s ease 0s;
+}
+
+.create-cont:hover{
+    color: #2BD2FF;
+}
+
+.text-create{
+    text-align: center;
+    padding: 6px;
+}
